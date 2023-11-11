@@ -1,0 +1,18 @@
+.RecruiterCreatePosition .container{
+    display: grid;
+    padding: 2rem 2rem 0 2rem;
+    justify-items: center;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(255, 255, 255);
+}
+.RecruiterCreatePosition .container Form{
+    width: 100%;
+}
+.RecruiterCreatePosition .container h2{
+
+    margin: 1rem 0;
+}
+.RecruiterCreatePosition .container Button{
+    margin-right: 0.5rem;
+}

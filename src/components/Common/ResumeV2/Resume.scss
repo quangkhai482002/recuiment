@@ -1,0 +1,352 @@
+
+
+.Resume-Hover:hover {
+  .experiences:hover  .add-button {
+    display: block;
+  }
+
+  .add-row-button {
+    display: block;
+  }
+
+  .experience:hover > .delete-button {
+    visibility: visible !important;
+  }
+
+
+  .CustomCol:hover .delete-button {
+    visibility: visible !important;
+  }
+
+}
+
+.ResumeContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.ResumeContainer {
+  background-color: #dee2e6;
+  gap: 0.5rem;
+  overflow-y: scroll;
+  gap: 0.5rem;
+  position: relative;
+  max-width: 800px;
+  max-height: 100%;
+  overflow-y: scroll;
+  height: 95%;
+  aside {
+    background-color: white !important;
+    border-radius: 8px;
+    position: sticky !important;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  aside input {
+    margin: 0 8px;
+    width: auto;
+    margin-top: 1rem;
+  }
+
+  .ant-menu {
+    border-inline-end: none !important;
+    min-height: 85vh;
+    max-height: 85vh;
+    overflow-y: hidden;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .h-full {
+    height: 100%;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .Resume {
+    max-width: 572px;
+    padding: 10px;
+    background: white;
+    z-index: 8;
+    position: relative;
+    border-radius: 8px;
+    min-height: 700px;
+
+    #cv p {
+      white-space: pre-wrap;
+    }
+
+    p, span, h1, h2, h3, h4, h5, input, textarea {
+      font-family: 'Arial' ;
+    }
+
+
+    .menuItem {
+      width: 100%;
+    }
+
+    .text-bold {
+      font-weight: 700;
+      font-size: 22px;
+      // line-height: 0.9;
+    }
+
+    .text-semibold {
+      font-weight: 600;
+      font-size: 22px;
+      // line-height: 1.2;
+    }
+
+    .remove-gap {
+      gap: 0px !important; 
+    }
+
+    .line {
+      position: absolute;
+      width: 1.5px;
+      background-color: black;
+      height: 100%;
+    }
+
+    .container-line {
+      height: 90%;
+      margin-bottom: 20px;
+      position: absolute;
+      top: 0px;
+      right: 0;
+    }
+
+    .paragraph {
+      margin-left: 10px;
+      white-space: pre-line;
+    }
+
+    .delete-button {
+      z-index: 9999;
+      right: 0;
+      position: absolute;
+      padding: 0;
+      border: none;
+      height: 14px;
+      visibility: hidden;
+    }
+
+    .add-button {
+      display: none;
+    }
+
+    .add-row-button {
+      display: none;
+      margin: 20px 0;
+    }
+    
+
+    .experience {
+      padding: 0 10px;
+      width: 100%;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+
+    .text-small {
+      font-size: 10px;
+      line-height: 1.2;
+    }
+
+    .icon {
+      font-size: 12px !important;
+    }
+
+    .w-children-full > div:nth-child(2) {
+      width: 100%;
+    }
+
+    .ant-divider-with-text::after {
+      border-block-start: 0.5px solid !important;
+      transform: none !important;
+    }
+
+
+    div:where(.css-dev-only-do-not-override-12upa3x).ant-typography {
+      margin-bottom: 0px;
+    }
+
+    .circle {
+      border: 5px solid;
+      border-radius: 9999px;
+      background-color: black;
+    }
+
+    .vertical-line-dash {
+      width: 0px;
+      border: 0.5px dashed;
+      height: 100%;
+      position: absolute;
+      left: 3.5px;
+      margin-right: 10px;
+    }
+
+    textarea, input {
+      border: none;
+      width: 100%;
+      padding: 0;
+      overflow:hidden;
+      min-height: 12px;
+      white-space: pre-wrap;
+      margin-right: 0px;
+      border-radius: 0px;
+    }
+
+
+    :where(.css-dev-only-do-not-override-12upa3x).ant-input-disabled, :where(.css-dev-only-do-not-override-12upa3x).ant-input[disabled] {
+      color: rgba(0, 0, 0, 0.88);
+      cursor: text;
+      background-color: #ffffff;
+      padding: 0;
+    }
+
+    .px-10 {
+      padding: 0 10px;
+    }
+
+    .pl-10 {
+      padding-left: 10px;
+    }
+
+    .gap-8 {
+      gap: 8px;
+    }
+
+
+    .pl-20 {
+      padding-left: 20px;
+    }
+
+    .ml-10 {
+      margin-left: 10px;
+    }
+
+    .mr-10 {
+      padding-right: 10px;
+    }
+
+    .mb-10 {
+      margin-bottom: 10px;
+    }
+
+    .mb-15 {
+      margin-bottom: 15px;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .text-10 {
+      font-size: 10px;
+    }
+
+    .text-12 {
+      font-size: 12px ;
+    }
+
+    .text-22 {
+      font-size: 22px;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .flex-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .CustomCol {
+      min-height: 100px;
+    }
+
+    .CustomSection {
+      display: relative;
+    }
+  }
+}
+
+
+.ResumeModal {
+
+  .ant-modal-content {
+    padding: 0 0;
+  }
+
+  
+  .ant-modal-close {
+    top: 12px;
+  }
+
+  .ant-modal-body {
+    padding: 12px 24px;
+  }
+
+  .ant-modal-title {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    color: whitesmoke;
+    background: #20252a;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .ant-modal-close-x {
+    color: whitesmoke;
+  }
+
+  .list-card {
+    width: 100%;
+  }
+
+
+  .section-card {
+    width: 220px;
+  }
+
+  .ant-card-meta-description {
+    overflow: hidden;
+   display: -webkit-box;
+   min-height: 66px;
+   max-height: 66px;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+   color: rgba(0, 0, 0, 0.88);
+  }
+
+  .w-full {
+    width: 100%;
+  }
+  
+  .flex {
+    display: flex;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+}

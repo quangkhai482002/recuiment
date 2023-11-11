@@ -1,0 +1,54 @@
+.Sider {
+  background-color: #2d353c !important;
+  z-index: 11;
+  height: 100vh;
+
+  .MySiderLeft {
+    width: 100%;
+    .title {
+      cursor: unset;
+      color: #333;
+      text-align: center;
+    }
+  }
+
+  .antd-container {
+    background-color: white;
+    padding-left: 28px;
+    padding-right: 28px;
+    height: 52px;
+    display: flex;
+  }
+
+
+  .antd-container span {
+    text-transform: capitalize;
+  }
+
+  .divider {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-block-start: solid #e3e3e3 1px;
+  }
+
+  .menu {
+    border-inline-end: none !important;
+    background-color: #2d353c !important;
+  }
+
+  .ant-menu-item * {
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .ant-menu-item:hover * {
+    color: whitesmoke;
+  }
+
+  .ant-menu-item-selected * {
+    color: black;
+  }
+
+  .ant-menu-item-selected:hover * {
+    color: black !important;
+  }
+}

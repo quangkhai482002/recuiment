@@ -1,0 +1,14 @@
+.ApplyForm{
+    .ant-btn-primary {
+        background-color:#87d068;
+        letter-spacing: 0.175px;
+        color: #fff;
+        &:hover {
+            background-color: #52c41a;
+        }
+        &:disabled{
+            background-color: #a4acb4;
+        }
+     
+    }
+}

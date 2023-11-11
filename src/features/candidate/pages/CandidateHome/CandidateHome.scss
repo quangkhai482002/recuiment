@@ -1,0 +1,44 @@
+.CandidateHomePage {
+  margin-bottom: 50px;
+  min-height: 36rem;
+  .pagination {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .my-25 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .mb-25 {
+    margin-bottom: 25px;
+  }
+
+  .mx-100 {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  h3 {
+    line-height: 1;
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+  }
+}
+

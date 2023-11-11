@@ -1,0 +1,38 @@
+.event-card-content {
+  display: flex;
+
+  .event-card-logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .event-card-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.5;
+    max-height: 4.5em;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+}
+
+.icon-hidden {
+  display: none;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 550px) {
+  .detail-hidden {
+    display: none;
+  }
+
+  .icon-hidden {
+    display: block;
+  }
+
+  .event-card-logo {
+    display: none;
+  }
+}

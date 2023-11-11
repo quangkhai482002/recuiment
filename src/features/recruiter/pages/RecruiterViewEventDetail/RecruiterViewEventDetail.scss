@@ -1,0 +1,45 @@
+.RecruiterViewEventDetail {
+    display: flex;
+    padding: 2rem 1rem;
+    padding-bottom: 0;
+    background-color: white;
+    text-align: center;
+
+    h1 {
+        color: blue;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .px-10 {
+        padding: 0 10px;
+    }
+
+    .ant-table-thead .ant-table-cell {
+        background-color: #cfe8e0;
+    }
+}
+
+.RecruiterViewEventDetail-sub {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .RecruiterViewEventDetail {
+        div {
+            .btn-action {
+                padding: 4px 4px;
+            }
+        }
+    }
+
+    .RecruiterViewEventDetail-main {
+        display: none;
+    }
+
+    .RecruiterViewEventDetail-sub {
+        display: block;
+    }
+}

@@ -1,0 +1,198 @@
+.ManageQuestionModal {
+  .ant-modal-content {
+    padding: 0;
+  }
+
+  .ant-modal-title {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    color: whitesmoke;
+    background: #20252a;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .ant-modal-body {
+    padding: 12px 24px;
+  }
+
+  .ant-modal-close-x {
+    font-size: 0.8rem;
+  }
+
+  .ant-modal-close {
+    background: #ff5b57;
+    color: white;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .ant-modal-close:hover {
+    background: #ff5b57;
+    color: white;
+    opacity: 0.8;
+  }
+
+  .button {
+    background-color: #276baa;
+    color: white;
+    border-color: whitesmoke;
+    height: 100%;
+  }
+
+  .button:hover {
+    opacity: 0.8;
+    color: white;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #276baa;
+  }
+}
+
+
+.ManageQuestion {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0px;
+
+  table {
+    border-collapse: collapse;
+    table-layout: fixed !important;
+  }
+
+  table td {
+    word-wrap: break-word;
+  }
+
+  .centre-align {
+    text-align: center;
+  }
+
+  td, span, p, input, textarea, div {
+    font-size: 1em;
+  }
+
+  .button {
+    background-color: #00acac;
+    color: whitesmoke;
+    border-color: #00acac;
+  }
+
+  .button:hover {
+    opacity: 0.9;
+    border-color: #00acac;
+    background-color: #00acac;
+    color: whitesmoke;
+  }
+
+  :where(.css-dev-only-do-not-override-12upa3x).ant-btn-primary {
+    background-color: #5E5ADB;
+  }
+
+  .title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: solid #e3e3e3 1px;
+    max-height: fit-content;
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .title-container > h2, h3, h5 {
+    color: black;  
+    margin: 0px;
+  }
+
+  h4 {
+    color: whitesmoke;
+  }
+  
+  .divider {
+    width: 100%;
+  }
+
+  .table-container {
+    background-color: white;
+    border-radius: 4px;
+    border: solid #e3e3e3 1px;
+  }
+
+  .table-header {
+    background: #20252a;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 12px 2rem;
+  }
+
+  .ant-table-cell {
+    padding: 0.8rem 1rem !important;
+  }
+
+  // table {
+  //   padding: 0 2rem;
+  // }
+
+  table>thead>tr:first-child >*:first-child {
+    border-start-start-radius: 0px !important;
+  }
+
+  table>thead>tr:first-child >*:last-child {
+    border-start-end-radius: 0px !important;
+  }
+
+  .table-header * {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+ 
+
+  tbody > tr > td:nth-child(2) {
+    color: #5E5ADB;
+  }
+
+  .ant-table-cell-row-hover {
+    background-color: #F2F5FA !important;
+  }
+
+  .id {
+    padding: 2px 10px;
+    background-color: #E9EDF5;
+    border-radius: 4px;
+  }
+
+  .table-icon {
+    color: whitesmoke;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 100%;
+
+    td,
+    span,
+    p,
+    input,
+    textarea,
+    div {
+      font-size: 1em;
+    }
+
+    .table-icon:hover {
+      opacity: 0.8;
+    }
+
+    Table {
+      .ant-table-thead .ant-table-cell {
+        background-color: rgb(207, 232, 224);
+      }
+    }
+  }
+
+}

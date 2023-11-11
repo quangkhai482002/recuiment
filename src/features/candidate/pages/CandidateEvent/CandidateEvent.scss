@@ -1,0 +1,55 @@
+.CandidateEvent {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px;
+  align-items: center;
+  min-height: 36rem;
+  position: relative;
+  padding-bottom: 100px;
+
+  .header-event {
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: orange;
+  }
+
+  .pagination {
+    width: 275px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 35px;
+  }
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #757575 !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+.content_box_404 {
+  margin-top: -50px;
+}

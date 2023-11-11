@@ -1,0 +1,373 @@
+.admin-score-drawer {
+  .personal-drawer-container {
+    display: flex;
+    margin-top: 0.5rem;
+    .name-city-birthday {
+      width: 50%;
+      .item-drawer {
+        margin: 0.5rem 0rem;
+      }
+    }
+    .acc-country-sex {
+      width: 50%;
+      .item-drawer {
+        margin: 0.5rem 0rem;
+      }
+    }
+  }
+  .position-salary-container {
+    display: flex;
+    margin-top: 0.5rem;
+    .position-drawer {
+      width: 50%;
+    }
+    .salary-drawer {
+      width: 50%;
+    }
+  }
+  .working-location-drawer {
+    width: 95%;
+    margin-top: 0.5rem;
+  }
+  .requirements-drawer {
+    width: 95%;
+    margin-top: 0.5rem;
+  }
+  .email-phone {
+    .phone {
+      margin-top: 0.5rem;
+    }
+    margin: 1rem 1.5rem 0.5rem 0rem;
+  }
+}
+
+.admin-score.internal-container {
+  padding: 0.2rem 1.5rem 1.5rem 1.5rem;
+  margin: 1rem 10rem;
+  display: flex;
+  flex-direction: column;
+
+  :where(.css-dev-only-do-not-override-5kcmbw).ant-card-bordered {
+    border: 0px solid #f0f0f0;
+  }
+
+  :where(.css-dev-only-do-not-override-12upa3x).ant-card-bordered {
+    border: 0px;
+  }
+
+  :where(.css-dev-only-do-not-override-12upa3x).ant-typography mark {
+    padding: 0.15rem;
+    background-color: #ffe58f;
+  }
+
+  .candidate-avatar {
+    .stamp {
+      position: absolute;
+      transform: rotate(12 deg);
+      color: #555;
+      font-size: 1.7rem;
+      font-weight: 700;
+      border: 0.25rem solid #555;
+      display: inline-block;
+      padding: 0.25rem 1rem;
+      text-transform: uppercase;
+      font-family: "Courier";
+      mask-image: url("../../../../assets/images/grunge.png");
+      mask-size: 944px 604px;
+      mix-blend-mode: multiply;
+    }
+    .is-approved {
+      color: #0a9928;
+      border: 0.4rem solid #0a9928;
+      mask-position: 13rem 6rem;
+      transform: rotate(-10deg);
+      border-radius: 0.3rem;
+    }
+    .is-nope {
+      color: #d23;
+      border: 0.5rem double #d23;
+      transform: rotate(3deg);
+      mask-position: 2rem 3rem;
+      font-size: 1.6rem;
+      border-radius: 0.8rem;
+    }
+    .is-completed {
+      color: #d4ba11;
+      border: 0.4rem solid #d4ba11;
+      transform: rotate(5deg);
+      font-size: 1.3rem;
+      font-family: "Open sans", Helvetica, Arial, sans-serif;
+      border-radius: 0;
+    }
+    .is-cancelled {
+      color: rgb(221, 124, 21);
+      border: 0.5rem double rgb(221, 124, 21);
+      transform: rotate(3deg);
+      mask-position: 2rem 3rem;
+      font-size: 1.6rem;
+    }
+
+    background-color: white;
+
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    padding: 2rem 5rem;
+
+    .card-style {
+      display: flex;
+      justify-content: space-between;
+      .evalution-title {
+        display: flex;
+        margin-left: 3rem;
+        min-width: 13rem;
+        max-width: 25rem;
+        .title {
+          padding: 4.5rem 0rem 0rem 1rem;
+          font-weight: 600;
+          margin: auto;
+        }
+      }
+      .avatar-meta {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+        .avatar {
+          align-self: center;
+          margin-bottom: 1rem;
+          width: 11rem;
+          height: 11rem;
+          background-color: gray;
+        }
+        .infomation {
+          align-self: center;
+          display: flex;
+          justify-content: center;
+          .info-button {
+            margin-top: 0.2rem;
+            background-color: rgb(223, 240, 236);
+            width: 6rem;
+            margin-left: 0.25rem;
+          }
+          .cv-button {
+            margin-right: 0.25rem;
+            margin-top: 0.2rem;
+            background-color: rgb(223, 240, 236);
+            width: 6rem;
+          }
+        }
+      }
+    }
+    .space-btn {
+      margin-top: 2rem;
+      display: flex;
+      .user-info {
+        min-width: 10rem;
+        width: 20%;
+        .item {
+          height: 2.4rem;
+          border-radius: 3px;
+          margin: 0.1rem;
+          padding: 0.3rem;
+          display: flex;
+          background-color: rgb(223, 240, 236);
+          .info-item {
+            margin: 0.2rem;
+          }
+        }
+      }
+      .user-content {
+        min-width: 9rem;
+        width: 30%;
+        .item {
+          height: 2.4rem;
+          border-radius: 3px;
+          margin: 0.1rem;
+          padding: 0.3rem;
+          display: flex;
+          background-color: rgb(242, 242, 242);
+          .info-item {
+            margin: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+  .candidate-evalution {
+    display: flex;
+    flex-direction: column;
+    .evalution-title {
+      align-self: center;
+      margin-bottom: 1.5rem;
+    }
+    .question-container {
+      display: flex;
+      .question-title {
+        padding: 0.2rem;
+        display: flex;
+        width: 12%;
+        background-color: rgb(223, 240, 236);
+        margin: 0.1rem 0rem 0.1rem 0rem;
+      }
+      .question-content {
+        margin: 0.1rem 0rem 0.1rem 0rem;
+        padding: 0.2rem;
+        width: 88%;
+        background-color: rgb(242, 242, 242);
+      }
+    }
+
+    margin-bottom: 1rem;
+
+    background-color: white;
+
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    padding: 1rem 5rem;
+  }
+  .recruiter-evalution {
+    display: flex;
+    flex-direction: column;
+    .evalution-title {
+      align-self: center;
+      margin-bottom: 1.5rem;
+    }
+    margin-bottom: 1rem;
+    padding: 1rem 5rem;
+
+    background-color: white;
+
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+  .overall {
+    display: flex;
+    flex-direction: column;
+    .evalution-title {
+      align-self: center;
+      margin-bottom: 1.5rem;
+    }
+    margin-bottom: 1rem;
+    padding: 1rem 5rem;
+
+    background-color: white;
+
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    .ant-table-wrapper {
+      .ant-table {
+        .ant-table-thead {
+          .ant-table-cell {
+            background-color: rgb(223, 240, 236);
+          }
+        }
+      }
+    }
+  }
+  .blacklist-history {
+    display: flex;
+    flex-direction: column;
+    .evalution-title {
+      align-self: center;
+      margin-bottom: 1.5rem;
+    }
+    margin-bottom: 1rem;
+    padding: 1rem 5rem;
+
+    background-color: white;
+
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    .ant-table {
+      .ant-table-thead {
+        .ant-table-cell {
+          background-color: rgb(240, 154, 154);
+        }
+      }
+    }
+  }
+  .pass-fail-btn {
+    display: flex;
+    justify-content: center;
+    .pass-btn {
+      margin: 0rem 2rem 2rem 2rem;
+      background-color: rgb(7, 90, 7);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+      width: 10rem;
+      height: 3rem;
+    }
+    .pass-btn:hover {
+      background-color: rgb(112, 206, 112);
+      transition: 0.5s;
+    }
+    .fail-btn {
+      margin: 0rem 2rem 2rem 2rem;
+      background-color: rgb(135, 23, 23);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+      width: 10rem;
+      height: 3rem;
+    }
+    .fail-btn:hover {
+      background-color: rgb(216, 119, 119);
+      transition: 0.5s;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .admin-score.internal-container {
+    margin: 1rem 6rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .admin-score.internal-container {
+    margin: 1rem 6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .admin-score.internal-container {
+    margin: 1rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .admin-score.internal-container {
+    border: 0rem solid #f0f0f0;
+    margin: 1rem 2rem;
+    padding: 0.2rem 0.2rem 1.5rem 0.2rem;
+    display: flex;
+    .candidate-avatar {
+      .card-style {
+        .avatar-meta {
+          display: flex;
+          flex-direction: column;
+          .avatar {
+            width: 5rem;
+            height: 5rem;
+            align-self: center;
+            margin: 0rem;
+          }
+          div:nth-child(2) {
+            align-self: center;
+          }
+        }
+        .space-btn {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+    }
+
+    :where(.css-dev-only-do-not-override-12upa3x).ant-table-wrapper {
+      .ant-table-cell {
+        padding: 0.4rem;
+      }
+    }
+  }
+}

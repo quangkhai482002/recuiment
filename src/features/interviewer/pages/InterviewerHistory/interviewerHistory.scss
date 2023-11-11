@@ -1,0 +1,56 @@
+.InterviewerHistory {
+    Table {
+        .ant-table-thead .ant-table-cell {
+            background-color: rgb(207, 232, 224);
+        }
+    }
+    .ant-card{
+        border: none;
+        .ant-card-body{
+            height: 100%;
+            padding: 0 0 1rem 0;
+            .ant-row{
+                font-size: 0.9rem;
+                padding: 12px 24px;
+                color: whitesmoke;
+                background: #20252a;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                margin: 0;
+                h4.ant-typography{
+                    color: white;
+                }
+                .ant-btn {
+                    background-color: #00acac;
+                    color: whitesmoke;
+                    border-color: #00acac;
+                }
+                .ant-btn:hover {
+                opacity: 0.9;
+                border-color: #00acac;
+                background-color: #00acac;
+                color: whitesmoke;
+                }
+            }
+            .ant-table{
+                border-radius: 0;
+                .ant-table-cell {
+                    padding: 0.8rem 1.5rem !important;
+                    .ant-btn {
+                        border-radius: 100%;
+                    }
+                }
+                table>thead>tr:first-child >*:first-child {
+                    border-start-start-radius: 0px !important;
+                }
+            
+                table>thead>tr:first-child >*:last-child {
+                border-start-end-radius: 0px !important;
+                }
+            }
+            .ant-pagination{
+                padding-right: 1rem;
+            }
+        }
+    }
+}

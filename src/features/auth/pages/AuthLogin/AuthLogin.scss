@@ -1,0 +1,135 @@
+.AuthLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../../../assets/images/loginBg.jpg");
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+  .form {
+    width: 400px;
+    max-width: 400px;
+    gap: 15px 0;
+    border-radius: 20px;
+    background-color: white;
+    justify-content: flex-start;
+    padding: 3em 65px 7em 65px;
+    margin-bottom: 70px;
+    position: relative;
+
+    .header {
+      font-family: Quicksand;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .header span {
+      font-family: "Quicksand";
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .input {
+      border-radius: 10px;
+      font-family: Quicksand;
+      font-weight: 500;
+      font-size: 15px;
+      color: black;
+      line-height: 25px;
+      padding-left: 10px;
+      background-color: white;
+
+      min-height: 38px;
+      border: 1px solid;
+      border-color: black;
+    }
+
+    input:checked {
+      border: 2px solid;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+      transition: background-color 600000s 0s, color 600000s 0s;
+    }
+
+    .button {
+      height: 38px;
+      // <<<<<<< HEAD
+      //       padding-right: 0px;
+      //       padding-left: 10px;
+      //       background-color: #00b14f;
+      // =======
+      background-color: #00b14f;
+      // >>>>>>> 6807601b9fe0b025e23946a303e91efaf48267be
+      border-radius: 10px;
+
+      font-family: Quicksand;
+      font-weight: 600;
+      font-size: 18px;
+      color: white;
+      line-height: 25px;
+      transition: 0.2s all;
+    }
+
+    .button:hover {
+      background-color: #1ab961 !important;
+    }
+
+    .link {
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      color: black !important;
+    }
+
+    .link:hover {
+      opacity: 0.6;
+    }
+
+    .linkSmall {
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .icon {
+      color: coral;
+      font-size: 20px;
+    }
+    .goBack {
+      display: flex;
+      justify-content: space-evenly;
+      border: none;
+      outline: none;
+      margin-bottom: 10px;
+    }
+  }
+  .option {
+    position: fixed;
+    bottom: 0;
+    right: 0.5%;
+  }
+  .Loading {
+    margin-right: 8px;
+    display: inline-block;
+  }
+}

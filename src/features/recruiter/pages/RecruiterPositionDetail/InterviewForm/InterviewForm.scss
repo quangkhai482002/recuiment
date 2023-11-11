@@ -1,0 +1,36 @@
+.InterviewForm{
+    min-width: 500;
+    // .SelectSearch{
+    //     width: 50%;
+    // }
+    .ant-table-thead .ant-table-cell {
+        background-color: #cfe8e0;
+      }
+    .timePicker{
+        display:flex;
+        // align-content:flex-end;
+        justify-content:flex-end;
+        width: 100%;
+    }
+    .AssistInterviewers{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        .AssistInterviewer{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .ant-btn {
+                border-radius: 100%;
+            }
+            p {
+                color: #263a4d;
+                font-size: 16.5px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: .14px;
+            }
+        }
+        margin-bottom: 15px;
+    }
+}

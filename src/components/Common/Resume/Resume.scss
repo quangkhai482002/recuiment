@@ -1,0 +1,217 @@
+// @media print {
+//   @page {
+//     size: 155mm 250mm
+//   }
+// }
+
+@page {
+  size: 155mm 250mm
+}
+
+.Resume-Hover:hover {
+  .experiences:hover  .add-button {
+    display: block;
+  }
+
+  .certificates:hover  >  .add-button {
+    display: block;
+  }
+
+  .experience:hover > .delete-button {
+    visibility: visible !important;
+  }
+
+  .certificate:hover > .delete-button {
+    visibility: visible !important;
+  }
+}
+
+.Resume {
+  max-width: 572px;
+  padding: 10px;
+  background-color: white;
+  z-index: 8;
+
+  #cv p {
+    white-space: pre-wrap;
+  }
+
+  p, span, h1, h2, h3, h4, h5, input, textarea {
+    font-family: 'Arial' ;
+  }
+
+  .text-bold {
+    font-weight: 700 !important;
+    font-size: 22px;
+    line-height: 0.9;
+  }
+
+  .text-semibold {
+    font-weight: 600 !important;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .remove-gap {
+    gap: 0px !important; 
+  }
+
+  .line {
+    position: absolute;
+    width: 1.5px;
+    background-color: black;
+    height: 100%;
+  }
+
+  .container-line {
+    height: 90%;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+
+  .paragraph {
+    margin-left: 10px;
+    white-space: pre-line;
+  }
+
+  .delete-button {
+    z-index: 9999;
+    right: 0;
+    position: absolute;
+    padding: 0;
+    border: none;
+    height: 14px;
+    visibility: hidden;
+  }
+
+  .add-button {
+    display: none;
+  }
+  
+
+  .experience {
+    padding: 0 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+
+  .text-small {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .icon {
+    font-size: 12px !important;
+  }
+
+  .w-children-full > div:nth-child(2) {
+    width: 100%;
+  }
+
+  :where(.css-dev-only-do-not-override-12upa3x).ant-divider-horizontal.ant-divider-with-text::after {
+    border-block-start: 0.5px solid;
+    transform: none;
+  }
+
+  div:where(.css-dev-only-do-not-override-12upa3x).ant-typography {
+    margin-bottom: 0px;
+  }
+
+  .circle {
+    border: 5px solid;
+    border-radius: 9999px;
+    background-color: black;
+  }
+
+  .vertical-line-dash {
+    // width: 0px;
+    // border: 2px solid;
+    // border-style: dashed;
+    width: 0px;
+    border: 0.5px dashed;
+    height: 100%;
+    position: absolute;
+    left: 3.5px;
+    margin-right: 10px;
+  }
+
+  textarea, input {
+    border: none;
+    width: 100%;
+    padding: 0;
+    overflow:hidden;
+    min-height: 12px;
+    white-space: pre-wrap;
+  }
+
+  :where(.css-dev-only-do-not-override-12upa3x).ant-input-disabled, :where(.css-dev-only-do-not-override-12upa3x).ant-input[disabled] {
+    color: rgba(0, 0, 0, 0.88);
+    cursor: text;
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+  .px-10 {
+    padding: 0 10px;
+  }
+
+  .pl-10 {
+    padding-left: 10px;
+  }
+
+
+  .pl-20 {
+    padding-left: 20px;
+  }
+
+  .ml-10 {
+    margin-left: 10px;
+  }
+
+  .mr-10 {
+    padding-right: 10px;
+  }
+
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .mb-15 {
+    margin-bottom: 15px;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .text-10 {
+    font-size: 10px !important;
+  }
+
+  .text-12 {
+    font-size: 12px !important;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+
+}

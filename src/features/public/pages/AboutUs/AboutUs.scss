@@ -1,0 +1,263 @@
+.AboutUs {
+  background: white;
+  width: 100vw;
+
+  .flex {
+    display: flex !important;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .mt-56 {
+    margin-top: 56px;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+
+  
+
+  .about-us {
+    width: 100%;
+    height: 437px;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    background-image: url('../../../../assets/images/about-us-header.png');
+  }
+
+  .polygon {
+    height: 100%;
+    width: 40%;
+    background: white;
+    clip-path: polygon(0% 0%, 70% 0, 100% 50%, 70% 100%, 0% 100%);
+  }
+
+  .title-container {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem !important;
+    color: #2C1F54;
+  }
+  .company {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 0px !important;
+    color: #2C1F54;
+  }
+
+  .outer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 12rem;
+  }
+
+  .intro {
+    padding: 3em 0 2em;
+  }
+
+  .why {
+    background: #f7f7f7;
+    margin-bottom: 12rem;
+  }
+
+
+  .inner {
+    width: 1000px;
+  }
+
+  .why-title {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #f27024;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: fit-content;
+    color: #2C1F54;
+  }
+
+  .why-content {
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #2C1F54;
+  }
+
+  .content {
+    width: 60%;   
+  }
+
+  .content h3 {
+    font-weight: 700;   
+    padding-left: 1rem;
+    max-width: 85%;
+    border-left: 10px solid #f27024;
+    color: #2C1F54;
+  }
+  
+  .content span {
+    display: inline-block;
+    color: #2C1F54;
+    margin-bottom: 9px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .image-1 {
+    width: 40%;
+    height: 350px;
+    background: url(../../../../assets/images/bg_9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  }
+
+  
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .col h4 {
+    font-size: 24px;
+    color: #2C1F54;
+    text-align: center;
+  }
+
+  .col span {
+    color: #595959;
+    font-size: 1.2rem;
+  }
+
+  .row-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #2C1F54;
+    margin-bottom: 3.5rem;
+  }
+
+  .icon {
+    font-size: 2.5rem !important;
+    color: #f27024!important;
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .carousel-container {
+    background: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel-container h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #2C1F54;
+    margin-bottom: 40px;
+  }
+
+  .carousel {
+    width: 1000px;
+    padding: 1rem 0px;
+    border-top: 1px solid #d2d3d7;
+    border-bottom: 1px solid #d2d3d7;
+  }
+
+  .carousel-item {
+    background-color: #364d79;
+  }
+
+  .carousel img {
+    width: 132px;
+    height: 66px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: 0.6s all;
+    margin: 10px 20px;
+  }
+
+  .carousel img:hover {
+    opacity: 1;
+  }
+
+  .feedback {
+    width: 1000px;
+    display: flex;
+    transition: 0.4 all;
+  }
+
+  .feedback-inf {
+    width: 40%;
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+
+  .feedback-inf h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #204ea5;
+    margin-bottom: 0.2rem;
+  }
+
+  .feedback-inf span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #132f63;
+  }
+
+  .feedback-inf img {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  .feedback-content {
+    width: 60%;
+    padding-left: 100px;
+    padding-top: 50px;
+    position: relative;
+    border-left: 1px solid #d2d3d7;
+  }
+
+  .feedback-icon {
+    color: #f27024;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 1rem;
+  }
+
+  .feedback-detail {
+    font-style: italic !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+}

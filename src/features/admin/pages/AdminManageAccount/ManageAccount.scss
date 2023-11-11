@@ -1,0 +1,251 @@
+.AddAccountModal {
+    .ant-modal-content {
+        padding: 0;
+    }
+    .ant-modal-header {
+        background-color: #20252a;
+        .ant-modal-title {
+            font-size: 0.9rem;
+            padding: 12px 24px;
+            color: whitesmoke;
+            background: #20252a;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    }
+
+    .ant-modal-body {
+        padding: 12px 24px;
+    }
+
+    .ant-modal-close-x {
+        font-size: 0.8rem;
+    }
+
+    .ant-modal-close {
+        background: #ff5b57;
+        color: white;
+        border-radius: 100%;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .ant-modal-close:hover {
+        background: #ff5b57;
+        color: white;
+        opacity: 0.8;
+    }
+
+    .ant-btn {
+        background-color: #276baa;
+        color: white;
+        border-color: whitesmoke;
+        height: 100%;
+    }
+
+    .ant-btn:hover {
+        opacity: 0.8;
+        color: white;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #276baa;
+    }
+}
+
+.AddBlacklistModal {
+    .ant-modal-content {
+        padding: 0;
+    }
+
+    .ant-modal-header {
+        background-color: #20252a;
+        margin: 0;
+    }
+
+    .ant-modal-title, .ant-card-head {
+        font-size: 0.9rem;
+        padding: 12px 24px;
+        color: whitesmoke;
+        background: #20252a;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .ant-modal-body {
+        padding: 0;
+        .ant-card{
+            .ant-card-body {
+                padding-bottom: 16px;
+                .ant-card-meta {
+                    margin-bottom: 40px;
+                }
+                .ant-card{
+                    box-shadow: none;
+                    .ant-card-body {
+                        padding-top: 0;
+                        .ant-list-item-meta-title{
+                            span:nth-child(1){
+                                margin-right: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ant-modal-close-x {
+        font-size: 0.8rem;
+    }
+
+    .ant-modal-close {
+        background: #ff5b57;
+        color: white;
+        border-radius: 100%;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .ant-modal-close:hover {
+        background: #ff5b57;
+        color: white;
+        opacity: 0.8;
+    }
+
+    .ant-btn {
+        background-color: #276baa;
+        color: white;
+        border-color: whitesmoke;
+        height: 100%;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .ant-btn:hover {
+        opacity: 0.8;
+        color: white;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #276baa;
+    }
+}
+
+.ConfirmModal {
+    .ant-modal-content {
+        padding: 0;
+        .ant-modal-confirm-body {
+            font-size: 0.9rem;
+            padding: 12px 24px;
+            background: #20252a;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            .anticon{
+                color: #ff5b57;
+            }
+            .ant-modal-confirm-title{
+                color: whitesmoke;
+            }
+            .ant-modal-confirm-content{
+                color: whitesmoke;
+            }
+        }
+        .ant-modal-confirm-btns{
+            margin: 0;
+            padding: 24px 24px;
+            text-align: end;
+            background: #20252a;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            .ant-btn:nth-child(1) {
+                background-color: #276baa;
+                color: white;
+                border-color: whitesmoke;
+                height: 100%;
+            }
+
+            .ant-btn:nth-child(2) {
+                background-color: #ff5b57;
+                color: white;
+                border-color: whitesmoke;
+                height: 100%;
+            }
+        
+            .ant-btn:hover {
+                opacity: 0.8;
+                color: white;
+            }
+        }
+    }    
+}
+
+.ManageAccount {
+    padding: 0 0 3rem 0;
+
+    Table {
+        .ant-table-thead .ant-table-cell {
+            background-color: rgb(207, 232, 224);
+        }
+    }
+    .ant-card-body{
+        padding: 0 0 1.5rem 0;
+        border-radius: 8px;
+        height: 100%;
+        .ant-tabs-nav-wrap {
+            border-radius:  8px 8px 0 0;
+            .ant-tabs-nav-list{
+                background-color: #20252a;
+                border-radius: 12px;
+                flex: 1;
+                font-weight: 500;
+                font-size: 22px;
+                .ant-tabs-tab {
+                    flex-grow: 1;
+                    justify-content: center;
+                    background-color: #20252a;
+                    color: #b2b2b2ff;
+                    border: none;
+                    border-radius: 0;
+                    &:hover{
+                        color: white;
+                        transition: 0.2s;
+                    }
+                }
+                .ant-tabs-tab-active{
+                    background-color: white;
+                    border-radius: 8px 8px 0 0 !important;
+                    .ant-tabs-tab-btn{
+                        color: #20252a;
+                        transition: 0;
+                    }
+                }
+            }
+        }
+        .ant-tabs-content-holder{
+            padding: 0 1rem;
+            .ant-row{
+                .ant-btn {
+                    background-color: #00acac;
+                    color: whitesmoke;
+                    border-color: #00acac;
+                }
+                .ant-btn:hover {
+                opacity: 0.9;
+                border-color: #00acac;
+                background-color: #00acac;
+                color: whitesmoke;
+                }
+            }
+
+            .ant-table{
+                .ant-table-cell {
+                    padding: 0.8rem 1rem !important;
+                }
+                .ant-btn {
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

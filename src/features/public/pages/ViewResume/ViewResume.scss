@@ -1,0 +1,109 @@
+.ViewResume {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    background: #141414;
+  }
+
+  .header * {
+    margin: 0;
+  }
+
+  .header h1 {
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .background {
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .resume {
+    position: relative;
+    z-index: 10;
+    width: 600px;
+    padding-top: 25px;
+    padding-bottom: 25px;    
+    max-width: 572px;
+  }
+
+  .resume-header {
+    background-color: #20252a;
+    padding: 4px 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  } 
+
+  .resume-header h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 572px;
+    height: 650px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: whitesmoke;
+  }
+
+  .spin {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+
+  .result {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    padding-top: 6rem;
+  }
+
+  .ant-result-image {
+    margin: 0;
+  }
+
+  object {
+    border: none;
+    width: 100%;
+    height: 650px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 10;
+  }
+
+  pdf-viewer {
+    overflow: hidden;
+  }
+
+}

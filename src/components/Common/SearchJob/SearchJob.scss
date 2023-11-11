@@ -1,0 +1,36 @@
+.SearchJob {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: relative;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+  .w-full {
+    width: 100%;
+  }
+
+  .mb-8 {
+    margin-bottom: 8px;
+  }
+
+  .select {
+    white-space: nowrap;
+    height: 32px;
+    overflow: auto;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+  }
+  
+}

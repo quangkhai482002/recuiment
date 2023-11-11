@@ -1,0 +1,115 @@
+.Position {
+
+  .logo {
+    height: 175px;
+    border-top: 8px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -2px rgb(0 0 0 / 0.1);
+  }
+
+
+  h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+   -webkit-box-orient: vertical;
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .salary {
+    color: #0c51a0;
+    font-size: 0.85rem;
+    overflow: hidden;
+  } 
+
+  .location-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .icon {
+    color: #f27024;
+  }
+
+  .location  {
+    overflow: hidden;
+    display: -webkit-box;
+   -webkit-line-clamp: 1; /* number of lines to show */
+   -webkit-box-orient: vertical;
+   color: #f27024;
+   font-weight: 500;
+  }
+
+  .description-container {
+    min-height: 110px;
+    margin-top: 8px;
+    padding-left: 12px;
+  }
+
+  .description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    color: #6d6d6d;
+  }
+
+  .tag-container {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px !important;
+    overflow-x: scroll;
+    padding-bottom: 8px;
+  }
+
+  .tag-container::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	  background-color: #F5F5F5;
+  }
+
+  .tag-container::-webkit-scrollbar
+  {
+    height: 3px;
+	  background-color: #F5F5F5;
+  }
+
+  .tag-container::-webkit-scrollbar-thumb
+  {
+    background-color: #000000;
+  }
+
+  .ant-tag {
+    margin-right: 0px !important;
+  }
+
+  .tag {
+    color: black;
+    font-weight: 500;
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .apply-button {
+    background-color: #00b14f;
+    color: white;
+    transition: 0.4s all;
+  }
+
+  .apply-button:hover {
+    background-color: #33c172;
+    color: whitesmoke;
+    border-color: #33c172;
+  }
+}

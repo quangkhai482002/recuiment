@@ -1,0 +1,91 @@
+.admin-rec-position.internal-container {
+  Table {
+    .ant-table-thead .ant-table-cell {
+      background-color: rgb(207, 232, 224);
+    }
+  }
+
+  .ant-row {
+    padding: 0 0 2rem 0;
+    .ant-col {
+      z-index: 2;
+      .position-name {
+        color: white;
+        font-weight: 700;
+      }
+      @media (min-width: 320px) and (max-width: 991.98px) {
+        .position-name {
+          color: black;
+        }
+      }
+    }
+    .ant-card {
+      border-radius: 1rem;
+      border: none;
+      z-index: 2;
+      .ant-card-body {
+        height: 100%;
+        .ant-row {
+          padding: 0;
+          align-items: center;
+          span.ant-typography {
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 600;
+          }
+          h2.ant-typography {
+            margin: 0;
+            color: white;
+          }
+          .anticon {
+            font-size: 42px;
+            color: rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+    }
+  }
+
+  .RecruitmentTable {
+    border: none;
+    .ant-card-head {
+      min-height: 50px;
+      font-size: 0.9rem;
+      padding: 0px 24px;
+      color: whitesmoke;
+      background: #20252a;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .ant-card-body {
+      padding: 0 0 1rem 0;
+      .ant-table {
+        font-size: 0.85rem;
+        border-radius: 0;
+        thead .ant-table-cell {
+          font-weight: 500;
+        }
+
+        .ant-table-cell {
+          font-weight: 400;
+          padding: 0.8rem 1.5rem !important;
+          .ant-btn {
+            svg {
+              font-size: large;
+            }
+            border-radius: 100%;
+          }
+        }
+        table > thead > tr:first-child > *:first-child {
+          border-start-start-radius: 0px !important;
+        }
+
+        table > thead > tr:first-child > *:last-child {
+          border-start-end-radius: 0px !important;
+        }
+      }
+      .ant-pagination {
+        padding-right: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.ManageCV {
+  margin: 2rem 3rem;
+  min-height: 36rem;
+  .upload-crate-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin: 3rem 0rem 1rem 1.25rem;
+    .create-btn {
+      background-color: #31acd1;
+    }
+    .create-btn:hover {
+      background-color: #94d2e5;
+      transition: 0.5s;
+    }
+    .upload-btn {
+      background-color: #31acd1;
+    }
+    .upload-btn:hover {
+      background-color: #94d2e5;
+      transition: 0.5s;
+    }
+    .ant-space-item {
+      .ant-upload-wrapper {
+        .ant-btn:hover {
+          border-color: #31acd1;
+          color: #31acd1;
+        }
+        display: flex;
+        .ant-upload-list {
+          width: 121.6px;
+          margin-left: 0.5rem;
+          margin-right: 0rem;
+          .ant-upload-list-item .ant-upload-list-item-name {
+            padding: 0 0 0 2px;
+          }
+        }
+      }
+    }
+  }
+  .card-grid-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .ant-card-grid.card-grid-item {
+      margin: 0.5rem 0rem;
+      width: 25%;
+      padding: 0.9rem;
+      height: 12.5rem;
+
+      .grid-sub-container:hover {
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        width: 100.9%;
+        height: 100.9%;
+        transition: 0.1s;
+      }
+      .grid-sub-container {
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+        width: 100%;
+        height: 100%;
+        padding: 0.2rem 0.1rem 0.1rem 0.6rem;
+        border-radius: 10px;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column-reverse;
+
+        .grid-filename {
+          color: white;
+          display: flex;
+          width: 11rem;
+
+          div {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+        .grid-date-created {
+          margin: 0.2rem 0rem;
+          color: white;
+          font-style: italic;
+          display: flex;
+          justify-content: space-between;
+          .grid-action {
+            .ant-btn {
+              color: wheat;
+              padding: 0rem 0rem 0.2rem 0rem;
+              height: 29px;
+            }
+            .ant-btn.delete-btn {
+              padding: 0rem 0rem 0.2rem 0rem;
+              height: 29px;
+              color: rgb(226, 109, 109);
+            }
+            .ant-btn.delete-btn:hover {
+              color: #f81616;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .ManageCV {
+    margin: 2rem 0rem;
+  }
+}

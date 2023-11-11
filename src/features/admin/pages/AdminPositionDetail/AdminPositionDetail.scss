@@ -1,0 +1,124 @@
+.PositionDetail{
+    padding: 1rem 0 3rem 0;
+    Table {
+        .ant-table-thead .ant-table-cell {
+            background-color: rgb(207, 232, 224);
+        }
+    }
+    
+    &::before{
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        right: 0;
+        height: 180px;
+        z-index: 1;
+        background: #20252a;
+        content: '';
+        border-radius: 0 0 10px 10px;
+    }
+    .ant-row{
+        padding: 0 0 2rem 0;
+        .ant-col{
+            z-index: 2;
+            .position-name{
+                color: white;
+                font-weight: 700;
+            }
+            @media(min-width: 320px) and (max-width:991.98px) {
+                .position-name{
+                    color: black;
+                }
+            }
+        }
+        .ant-card{
+            border-radius: 1rem;
+            border: none;
+            z-index: 2;
+            .ant-card-body{
+                height: 100%;
+                .ant-row{
+                    padding: 0;
+                    align-items: center;
+                    span.ant-typography{
+                        color: rgba(255,255,255,.7);
+                        font-weight: 600;
+                    }
+                    h2.ant-typography{
+                        margin: 0;
+                        color: white;
+                    }
+                    .anticon{
+                        font-size: 42px;
+                        color: rgba(0,0,0,.15);
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 320px) and (max-width:991.98px) {
+            &::before {
+                display:none;
+            }
+    }
+    .AppliedTable{
+        border: none;
+        .ant-card-head{
+            font-size: 0.9rem;
+            padding: 12px 24px;
+            color: whitesmoke;
+            background: #20252a;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .ant-card-body{
+            padding: 0 0 1rem 0;
+            height: 100%;
+            .ant-table{
+                border-radius: 0;
+                .ant-table-cell {
+                    padding: 0.8rem 1.5rem !important;
+                    .ant-btn {
+                        border-radius: 100%;
+                    }
+                }
+                table>thead>tr:first-child >*:first-child {
+                    border-start-start-radius: 0px !important;
+                }
+            
+                table>thead>tr:first-child >*:last-child {
+                border-start-end-radius: 0px !important;
+                }
+            }
+            .ant-pagination{
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+// .bouncing-loader{
+//     display: flex;
+//     padding-top: 1.5rem;
+//     div{
+//         width: 0.5rem;
+//         height: 0.5rem;
+//         margin: 3px 6px 3px 0;
+//         border-radius: 50%;
+//         background-color: #a3a1a1;
+//         opacity: 1;
+//         animation: bouncing-loader 0.6s infinite alternate;
+//         &:nth-child(2){
+//             animation-delay: 0.2s;
+//         }
+//         &:nth-child(3){
+//             animation-delay: 0.4s;
+//         }
+//     }
+//     @keyframes bouncing-loader {
+//         to {
+//         opacity: 0.1;
+//         transform: translateY(-16px);
+//         }
+//     }
+// }

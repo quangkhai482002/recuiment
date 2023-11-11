@@ -1,0 +1,168 @@
+
+.RecruiterPositionDetail{
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    
+    h1{
+        color:blue;
+    }
+
+
+    .px-10 {
+        padding: 0 10px;
+    }
+    .ant-table-thead .ant-table-cell {
+        background-color: #cfe8e0;
+      }
+    h1{
+        margin:1rem 0;
+    }
+
+    .tabApplications{
+        .ant-tabs-nav-wrap {
+            border-radius:  8px 8px 0 0;
+            .ant-tabs-nav-list{
+                background-color: #20252a;
+                border-radius: 12px;
+                font-weight: 500;
+                font-size: 22px;
+
+                .ant-tabs-tab {
+                    
+                    justify-content: center;
+                    background-color: #20252a;
+                    color: #93edba;
+                    border: none;
+                    border-radius: 0;
+                    &:hover{
+                        color: white;
+                        transition: 0.2s;
+                    }
+                }
+                .ant-tabs-tab-active{
+                    background-color: #edcb93;
+                    border-radius: 8px 8px 0 0 !important;
+                    .ant-tabs-tab-btn{
+                        color: #20252a;
+                        transition: 0;
+                    }
+                }
+            }
+        }
+        .ant-tabs-content-holder{
+
+            .ant-row{
+                .ant-btn {
+                    background-color: #00acac;
+                    color: whitesmoke;
+                    border-color: #00acac;
+                }
+                .ant-btn:hover {
+                opacity: 0.9;
+                border-color: #00acac;
+                background-color: #00acac;
+                color: whitesmoke;
+                }
+            }
+
+            .ant-table{
+                .ant-table-cell {
+                    padding: 0.8rem 1rem !important;
+                }
+                .ant-btn {
+                    border-radius: 100%;
+                }
+            }
+        }
+
+    }
+    .column{
+        color: whitesmoke;
+        border: solid 1px #cbebe3;
+        border-radius: 10px;
+        padding: 1rem;
+        }
+    
+    @media screen and (max-width: 500px) {
+        .column {
+          flex: 100% !important;
+        }
+    }
+
+}
+.loading{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Authorization{
+    .ant-modal-content{
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        height: 55vh;
+        border-radius: 1rem;
+        gap:10px;
+        position: relative;
+        .ant-modal-header{
+            height: 30vh;
+            border-top-left-radius: 1rem ;
+            border-top-right-radius: 1rem;
+            background-color: #e85e6c;
+            .ant-modal-title{  
+                height:100%;
+                color: #fff;
+                width:100%;
+                font-size: 2.5rem;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    height:100px;
+                    width: auto;
+                    svg{
+                        height:100%;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .ant-modal-body{
+            height:10vh;
+            display: flex;
+            width : 100%;
+            justify-content: center;
+            align-items: center;
+            p{
+                color: #4d4f65;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+        .ant-modal-footer{
+            display:flex;
+            justify-content: center;
+            flex-grow: 1;
+            width: 100%;
+            .button{
+                background-color: #eeb711;
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+                height: 80%;
+                width: auto;
+                &:hover{
+                    background-color: #eeb711bd;
+                    color: #fff;
+                }
+            }
+        }
+    }
+   
+}

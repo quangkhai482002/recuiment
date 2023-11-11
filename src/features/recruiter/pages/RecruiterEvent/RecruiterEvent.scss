@@ -1,0 +1,52 @@
+.RecruiterEvent {
+  // width: 80%;
+  max-width: 1450px;
+  margin: 0 auto;
+
+  .RecruiterEvent-main,
+  .RecruiterEvent-sub {
+
+    div {
+      .btn-action {
+        padding: 4px 6px;
+      }
+
+      .btn-action.btn-view,
+      .btn-action.btn-edit,
+      .btn-action.btn-delete {
+        &:hover {
+          background-color: rgba(204, 204, 204, 0.5);
+        }
+      }
+
+      div {
+        .ant-table-thead .ant-table-cell {
+          background-color: rgb(207, 232, 224);
+          border-radius: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.RecruiterEvent-sub {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .RecruiterEvent {
+    div {
+      .btn-action {
+        padding: 4px 4px;
+      }
+    }
+  }
+
+  .RecruiterEvent-main {
+    display: none;
+  }
+
+  .RecruiterEvent-sub {
+    display: block;
+  }
+}

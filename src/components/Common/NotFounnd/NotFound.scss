@@ -1,0 +1,97 @@
+// NotFound.scss
+
+.notFound {
+  --duration: 6.66s;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #333844;
+  font-family: "Heebo", sans-serif;
+  background-image: url("../../../assets/images/loginBg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+
+  .card-front {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    transform: translate3d(0, 0, 0.01px);
+    width: 90vw;
+    font-family: PT Mono, monospace;
+    max-width: 680px;
+    aspect-ratio: 5/2;
+    border-radius: 3.5% / 5%;
+
+    background-image: url("../../../assets/images/404-error.jpg");
+    background-size: 90% 90%;
+    background-position: 42% 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0 30px 40px -25px rgba(15, 5, 20, 1),
+      0 20px 50px -15px rgba(15, 5, 20, 1);
+    animation: tilt var(--duration) ease infinite;
+
+    &:before {
+      content: "";
+      position: absolute;
+      transform: translate3d(0, 0, 0.01px);
+      mix-blend-mode: color-dodge;
+      filter: brightness(2) contrast(0.8);
+      animation: bg var(--duration) ease infinite;
+    }
+
+    &:after {
+      content: "";
+      background: none, none,
+        linear-gradient(
+          125deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.4) 0.1%,
+          rgba(255, 255, 255, 0) 60%
+        );
+      background-size: 200% 200%;
+      mix-blend-mode: hard-light;
+      animation: bg var(--duration) ease infinite;
+      border-radius: 3.5% 3.5% 3.5% 3.5% / 5% 5% 5% 5%;
+    }
+
+    .ant-btn {
+      margin: 0 20px 8px 0;
+      background-color: #6e6e70;
+      color: #e7e8e8;
+      border: 1px solid #e7e8e8;
+      font-weight: 400;
+      font-size: 12px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #e7e8e8;
+        color: #6e6e70;
+        transform: scale(1.04);
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    @keyframes tilt {
+      0%, 100% {
+        transform: translate3d(0, 0, 0.01px) rotateY(-20deg) rotateX(5deg);
+      }
+      50% {
+        transform: translate3d(0, 0, 0.01px) rotateY(20deg) rotateX(5deg);
+      }
+    }
+
+    @keyframes bg {
+      0%, 100% {
+        background-position: 50% 50%, calc(50% + 1px) calc(50% + 1px), 0% 50%;
+      }
+      50% {
+        background-position: 50% 50%, calc(50% - 1px) calc(50% - 1px), 100% 50%;
+      }
+    }
+  }
+}

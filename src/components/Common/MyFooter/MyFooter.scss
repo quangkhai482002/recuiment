@@ -1,0 +1,57 @@
+.MyFooter {
+  height: 100%;
+  width: 100%;
+  background-color: #141414;
+  position: relative;
+  z-index: 1000;
+
+  .content {
+    min-height: 10vh;
+    width: 100%;
+    flex-direction: row;
+    .title {
+      color: #d9dadc;
+      font-size: 0.8rem;
+      cursor: unset;
+      &:hover{
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+  }
+
+  .sider {
+    min-height: 10vh;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    .icon {
+      color: #d9dadc;
+      cursor: unset;
+      margin: 0 0.7rem;
+      &:hover{
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+  }
+  .footer {
+    min-height: 10vh;
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    .text
+    {
+      color: #d9dadc;
+      font-size: 0.6rem;
+    }
+    .icon {
+      color: #d9dadc;
+      cursor: unset;
+      &:hover{
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+  }
+}

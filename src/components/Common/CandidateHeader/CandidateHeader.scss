@@ -1,0 +1,164 @@
+.CandidateHeader {
+  padding-inline: 0px;
+  z-index: 1000;
+  max-height: 54.5px;
+  min-height: 54.5px;
+
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  border: 1px solid rgba(253, 253, 253, 0.12);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-bottom: 0.5px solid #d9d9d9;
+
+  h1, h2, h3, h4, h5, span, p {
+    margin-bottom: 0px;
+    color: black;
+  }
+
+  .login {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: white;
+    padding: 0.7rem 1rem;
+    background-color: #00B14F;
+    margin-left: 1rem;
+    border-radius: 4px;
+    text-align: center; 
+    cursor: pointer;
+    transition: 0.2 all;
+  }
+
+  .login:hover {
+    background: #1ab961 ;
+  }
+
+  .signup {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #0d0c22;
+    padding: 0.7rem 1rem;
+    background-color: #f8f7f4;
+    margin-left: 1rem;
+    border-radius: 4px;
+    text-align: center; 
+    cursor: pointer;
+    transition: 0.4 all;
+  }
+
+  .signup:hover {
+    background: #f5f3f0;
+  }
+
+  .flex {
+    display: flex !important;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .mt-56 {
+    margin-top: 56px;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .loading-container {
+    width: 5rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .loading-container span {
+    font-size: 1rem;
+  }
+
+  .avatar {
+    width: fit-content;
+    height: fit-content;
+    background: #0d0c22;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    cursor: pointer;
+    padding: 3px 8px 3px 4px;
+    border-radius: 50px;
+  }
+
+  .avatar img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  .avatar span {
+    color: #dee2e6;
+  }
+
+  .logo {
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .logo:hover {
+    opacity: 0.8;
+  }
+
+  .ant-menu-item {
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s;
+    padding-left: 0px;
+  }
+
+  .menu:hover {
+    opacity: 0.7;
+  }
+
+  .name {
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 120px;
+    color: #2C1F54;
+  }
+
+
+  .gap-1 {
+    gap: 1rem;
+  }
+
+  .gap-2 {
+    gap: 2rem;
+  }
+
+
+  ul li {
+    list-style: none;
+  }
+}
+

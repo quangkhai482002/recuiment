@@ -1,0 +1,83 @@
+.InternalHeader {
+  background-color: white;
+  padding: 0 2rem;
+  height: 52px;
+  line-height: 52px;
+  display: flex;
+  gap: 1rem;
+  border: solid #e3e3e3 1px;
+  border-left: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  max-width: 100%;
+  overflow: hidden;
+  
+
+  .input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+    color: #20252a;
+  }
+
+  .avatar-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 0.7rem;
+  }
+
+  .avatar-container:hover > * {
+    color: gray;
+  }
+
+  .avatar-container {
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .username {
+    font-weight: 400;
+    max-width: 100px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .message-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // min-width: 30%;
+    min-width: 275px;
+  }
+
+  .gap-1r {
+    gap: 16px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .icon {
+      display: none;
+    }
+  }
+
+  .ant-input-affix-wrapper,  .ant-input-affix-wrapper input{
+    background: #f2f3f4;
+  }
+}
